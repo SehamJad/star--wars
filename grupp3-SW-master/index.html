@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>Star Wars encyclopedia</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="home" id="#">
+       <div class="loader"> </div>
+        <div class="main">
+            <div class="mini-main"><h1>Welcome to <span>Star Wars</span> search </h1></div>
+            <div class="form-group">
+                <form  id="form">
+                    <input type="text" name="" id="textInput" value="" class="form-control" required>
+                    <select name="" id="selectOptions" class="menu"></select>
+                    <input type="submit" id="submit" value="Submit" class="sbt">
+                </form>
+            </div>
+        </div>
+        <div class="resultPosition">
+            <div class="sec-main"><h3>Search result</h3></div> 
+            <div id="loading"></div>
+                <div class="flex">
+                  <ul id="result"> </ul>
+                  <ul id="resultText"></ul>
+                  <ul id="resultMore"></ul>
+                  <ul id="moreResults"></ul>              
+                </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                         <span class="close-button">×</span>
+                          <p class="detailList"> </p>
+                        </div>
+                    </div>           
+        </div>
+   </header>
+            
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
